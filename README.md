@@ -1,2 +1,2 @@
-# scad
-my 3D models for OpenSCAD
+# jsscad
+my 3D models for OpenJSCAD
