@@ -1,9 +1,7 @@
-// title      : OpenJSCAD.org Logo
-// author     : Rene K. Mueller
+// title      : Double Stack to Single Stack Insert
+// author     : Perry Huang
 // license    : MIT License
-// revision   : 0.003
-// tags       : Logo,Intersection,Sphere,Cube
-// file       : logo.jscad
+// file       : insert.jscad
 
 function main () {
   return union(
