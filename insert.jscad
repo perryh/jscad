@@ -3,15 +3,11 @@
 // license    : MIT License
 // file       : insert.jscad
 
-function main () {
-  return union(
-    difference(
-      cube({size: 3, center: true}),
-      sphere({r: 2, center: true})
-    ),
-    intersection(
-      sphere({r: 1.3, center: true}),
-      cube({size: 2.1, center: true})
-    )
-  ).translate([0, 0, 1.5]).scale(10);
+function main() {
+    return polyhedron({      // openscad-like (e.g. pyramid)
+  points: [ [10,10,0],[10,-10,0],[-10,-10,0],[-10,10,0], // the four points at base
+            [0,0,10] ],                                  // the apex point 
+  triangles: [ [0,1,4],[1,2,4],[2,3,4],[3,0,4],          // each triangle side
+               [1,0,3],[2,1,3] ]                         // two triangles for square base
+});
 }
